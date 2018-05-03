@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.0.4 (Python 3.6.3 on win32)" generated="20180501 15:25:03.247">
+<suite id="s1" name="SwayChat" source="C:\Users\JL\Desktop\Code Projects\RobotFramework Test\tests\SwayChat.robot">
+<test id="s1-t1" name="User can open homepage">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://swaychat.com/ chrome</arg>
+</arguments>
+<msg timestamp="20180501 15:25:03.567" level="INFO">Opening browser 'firefox' to base url 'https://swaychat.com/ chrome'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180501 15:25:03.578" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<status status="PASS" starttime="20180501 15:25:03.577" endtime="20180501 15:25:03.578"></status>
+</kw>
+<msg timestamp="20180501 15:25:03.581" level="FAIL">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</msg>
+<status status="FAIL" starttime="20180501 15:25:03.566" endtime="20180501 15:25:03.581"></status>
+</kw>
+<doc>User should be able to open the homepage and view the tagline</doc>
+<status status="FAIL" starttime="20180501 15:25:03.565" endtime="20180501 15:25:03.582" critical="yes">WebDriverException: Message: 'geckodriver' executable needs to be in PATH. 
+</status>
+</test>
+<doc>Basic test for SwayChat</doc>
+<status status="FAIL" starttime="20180501 15:25:03.249" endtime="20180501 15:25:03.584"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="SwayChat">SwayChat</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
